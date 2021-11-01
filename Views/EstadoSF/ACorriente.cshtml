@@ -1,0 +1,59 @@
+@model IEnumerable<TrabajoGrupal.Models.Cuentas>
+
+<h2>Lista de Cuentas "Activos Corrientes"</h2>
+<br>
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+                <th scope="col">
+                    
+                </th> 
+                <th scope="col">
+                   Problema
+                </th>
+                <th scope="col">
+                   Cuenta
+                </th>
+
+                <th scope="col">
+                    Año 2020
+                </th>
+                <th scope="col">
+                    Año 2019
+                </th>
+                <th scope="col">
+                    Año 2018
+                </th>
+                
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+
+        <tr>
+            <th scope="row">
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </th>
+            <td >
+ 				@Html.DisplayFor(modelItem => item.Problema)
+            </td>
+            <td >
+ 				@Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Año1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Año2)
+            </td>
+            
+            <td >
+                @Html.DisplayFor(modelItem => item.Año3)
+            </td>
+                    
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,224 @@
+@model TrabajoGrupal.Models.Razones
+<div class="container">
+    <p><h3> RAZON CORRIENTE</h3></p>
+    <div class="row">
+        <div class="col-md-6" style="margin-right: -300px;margin-left: 300px;">
+            <h6>
+                <p>Razon Corriente=</p>        
+            </h6>
+        </div>
+        <div class="col-md-6"  >
+        
+            <h6>
+                <p style="text-decoration: underline">Activos Corrientes</p> <br>
+                <p style="margin-top: -30px;">Pasivos Corrientes</p>
+            </h6>
+        </div>
+    </div>
+</div>
+
+
+
+<table style="text-align: center;margin: 0 auto;width:900px" border="1">
+    <tr>
+        <th>
+            <p>2020</p>
+        </th>
+
+        <th>
+            <p>2019</p>
+        </th>
+        <th>
+            <p>2018</p>
+        </th>
+        
+    </tr>
+    
+    <tr>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="RazonCorriente1" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                      
+                        <div class="col-md-6">
+                            <input asp-for="acorriente1" class="form-control" placeholder="Act. Corriente" style="width:130px;"> 
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <input asp-for="pcorriente1" class="form-control" placeholder="Pas. Corriente" style="width:120px;">
+                        </div>
+                        
+                        <br/>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        Razon Corriente (2020)= @Html.DisplayFor(model => model.Mensaje1)
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="RazonCorriente2" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="col-md-6">
+                            <input asp-for="acorriente2" class="form-control" placeholder="Act. Corriente" style="width:130px;"/>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <input asp-for="pcorriente2" class="form-control" placeholder="Pas. Corriente" style="width:130px;"/>
+                        </div>
+                        <br/>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                         Razon Corriente (2019)= @Html.DisplayFor(model => model.Mensaje2)
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="RazonCorriente3" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="col-md-6">
+                            <input asp-for="acorriente3" class="form-control" placeholder="Act. Corriente" style="width:130px;"/>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <input asp-for="pcorriente3" class="form-control" placeholder="Pas. Corriente" style="width:130px;"/>
+                        </div>
+                        <br/>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        Razon Corriente (2018)= @Html.DisplayFor(model => model.Mensaje3)
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+    </tr>
+</table>
+
+<br><br>
+<div class="container">
+    <p><h3> PRUEBA ACIDA</h3></p>
+    <div class="row" >
+    
+        <div class="col-md-6" style="margin-right: -300px;margin-left: 300px;">
+            <h6>
+                <p>Prueba Ácida=</p>        
+            </h6>
+        </div>
+        <div class="col-md-6"  >
+        
+            <h6>
+                <p style="text-decoration: underline">Activos Corrientes - Inventario</p> <br>
+                <p style="margin-top: -30px;text-align: center;"></p>Pasivos Corrientes</p>
+            </h6>
+        </div>
+    </div>
+</div>
+
+<table style="text-align: center;margin: 0 auto;width:900px" border="1">
+    <tr>
+        <th>
+            <p>2020</p>
+        </th>
+
+        <th>
+            <p>2019</p>
+        </th>
+        <th>
+            <p>2018</p>
+        </th>
+        
+    </tr>
+    <tr>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="PruebaAcida1" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="col-md-6">
+                            <input asp-for="acorriente4" class="form-control" placeholder="Act. Corriente" style="width:130px;"/>
+                            - <input asp-for="inventario4" class="form-control" placeholder="Inventario" style="width:130px;"/>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <input asp-for="pcorriente4" class="form-control" placeholder="Pas. Corriente" style="width:130px;"/>
+                        </div>
+                        <br/>
+                        
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        Prueba Ácida (2020)= @Html.DisplayFor(model => model.Mensaje4)
+                            <br>
+                        
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="PruebaAcida2" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="col-md-6">
+                            <input asp-for="acorriente5" class="form-control" placeholder="Act. Corriente" style="width:130px;"/>
+                            - <input asp-for="inventario5" class="form-control" placeholder="Inventario" style="width:130px;"/>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <input asp-for="pcorriente5" class="form-control" placeholder="Pas. Corriente" style="width:130px;"/>
+                        </div>
+                        <br/>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        Prueba Ácida (2019)= @Html.DisplayFor(model => model.Mensaje5)
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="PruebaAcida3" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="col-md-6">
+                            <input asp-for="acorriente6" class="form-control" placeholder="Act. Corriente" style="width:130px;"/>
+                            - <input asp-for="inventario6" class="form-control" placeholder="Inventario" style="width:130px;"/>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <input asp-for="pcorriente6" class="form-control" placeholder="Pas. Corriente" style="width:130px;"/>
+                        </div>
+                        <br/>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        Prueba Ácida (2018)= @Html.DisplayFor(model => model.Mensaje6)
+                            <br>
+                        
+                </div>
+            </div>
+            
+        </th>
+    </tr>
+</table>
+<br>
+<br>
