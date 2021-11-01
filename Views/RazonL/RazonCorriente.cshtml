@@ -4,14 +4,14 @@
     <div class="row">
         <div class="col-md-6" style="margin-right: -300px;margin-left: 300px;">
             <h6>
-                <p>Razon Corriente=</p>        
+                <p class="estilo">Razon Corriente=</p>        
             </h6>
         </div>
         <div class="col-md-6"  >
         
             <h6>
-                <p style="text-decoration: underline">Activos Corrientes</p> <br>
-                <p style="margin-top: -30px;">Pasivos Corrientes</p>
+                <p style="text-decoration: underline" class="estilo">Activos Corrientes</p> <br>
+                <p style="margin-top: -30px;" class="estilo">Pasivos Corrientes</p>
             </h6>
         </div>
     </div>
@@ -19,8 +19,8 @@
 
 
 
-<table style="text-align: center;margin: 0 auto;width:900px" border="1">
-    <tr>
+<table style="text-align: center;margin: 0 auto;width:500px" border="1">
+    <tr style="background-color: #2782E9;">
         <th>
             <p>2020</p>
         </th>
@@ -39,21 +39,24 @@
             <br>
             <div class="container-fluid">
                 <div class="row" style="margin: auto;">
-                    <form asp-action="RazonCorriente1" class="form-inline">
+                    <form asp-action="RazonCorriente1">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                       
-                        <div class="col-md-6">
+                        <div >
                             <input asp-for="acorriente1" class="form-control" placeholder="Act. Corriente" style="width:130px;"> 
                         </div>
                         
-                        <div class="col-md-6">
-                            <input asp-for="pcorriente1" class="form-control" placeholder="Pas. Corriente" style="width:120px;">
+                        ÷
+                        <br>
+                        
+                        <div >
+                            <input asp-for="pcorriente1" class="form-control" placeholder="Pas. Corriente" style="width:130px;">
                         </div>
                         
                         <br/>
                         <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
                     </form>
-                        Razon Corriente (2020)= @Html.DisplayFor(model => model.Mensaje1)
+                        <a class="estilo2">Razon Corriente (2020)= @Html.DisplayFor(model => model.Mensaje1)</a> 
                         <br>
                 </div>
             </div>
@@ -63,20 +66,22 @@
             <br>
             <div class="container-fluid">
                 <div class="row" style="margin: auto;">
-                    <form asp-action="RazonCorriente2" class="form-inline">
+                    <form asp-action="RazonCorriente2" >
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         
-                        <div class="col-md-6">
+                        <div >
                             <input asp-for="acorriente2" class="form-control" placeholder="Act. Corriente" style="width:130px;"/>
                         </div>
                         
-                        <div class="col-md-6">
+                        ÷
+                        <br>
+                        <div >
                             <input asp-for="pcorriente2" class="form-control" placeholder="Pas. Corriente" style="width:130px;"/>
                         </div>
                         <br/>
                         <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
                     </form>
-                         Razon Corriente (2019)= @Html.DisplayFor(model => model.Mensaje2)
+                         <a class="estilo2">Razon Corriente (2019)= @Html.DisplayFor(model => model.Mensaje2)</a>
                         <br>
                 </div>
             </div>
@@ -86,20 +91,22 @@
             <br>
             <div class="container-fluid">
                 <div class="row" style="margin: auto;">
-                    <form asp-action="RazonCorriente3" class="form-inline">
+                    <form asp-action="RazonCorriente3" >
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         
-                        <div class="col-md-6">
+                        <div >
                             <input asp-for="acorriente3" class="form-control" placeholder="Act. Corriente" style="width:130px;"/>
                         </div>
                         
-                        <div class="col-md-6">
+                        ÷
+                        <br>
+                        <div >
                             <input asp-for="pcorriente3" class="form-control" placeholder="Pas. Corriente" style="width:130px;"/>
                         </div>
                         <br/>
                         <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
                     </form>
-                        Razon Corriente (2018)= @Html.DisplayFor(model => model.Mensaje3)
+                        <a class="estilo2">Razon Corriente (2018)= @Html.DisplayFor(model => model.Mensaje3)</a>
                         <br>
                 </div>
             </div>
@@ -115,21 +122,21 @@
     
         <div class="col-md-6" style="margin-right: -300px;margin-left: 300px;">
             <h6>
-                <p>Prueba Ácida=</p>        
+                <p class="estilo">Prueba Ácida=</p>        
             </h6>
         </div>
         <div class="col-md-6"  >
         
             <h6>
-                <p style="text-decoration: underline">Activos Corrientes - Inventario</p> <br>
-                <p style="margin-top: -30px;text-align: center;"></p>Pasivos Corrientes</p>
+                <p style="text-decoration: underline" class="estilo">Activos Corrientes - Inventario</p> <br>
+                <p style="margin-top: -30px;" class="estilo">Pasivos Corrientes</p>
             </h6>
         </div>
     </div>
 </div>
 
 <table style="text-align: center;margin: 0 auto;width:900px" border="1">
-    <tr>
+    <tr style="background-color: #2782E9;">
         <th>
             <p>2020</p>
         </th>
@@ -150,19 +157,26 @@
                     <form asp-action="PruebaAcida1" class="form-inline">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         
-                        <div class="col-md-6">
+                        <div class="col-md-6" style="margin-left: -10px;">
                             <input asp-for="acorriente4" class="form-control" placeholder="Act. Corriente" style="width:130px;"/>
-                            - <input asp-for="inventario4" class="form-control" placeholder="Inventario" style="width:130px;"/>
+                        </div>
+                        <div class="col-md-6">
+                            <input asp-for="inventario4" class="form-control" placeholder="Inventario" style="width:130px;"/>
+                        </div>    
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
                         </div>
                         
-                        <div class="col-md-6">
+                        <br>
+                        <div class="col-md-12">
                             <input asp-for="pcorriente4" class="form-control" placeholder="Pas. Corriente" style="width:130px;"/>
                         </div>
-                        <br/>
+                        <br>
                         
                         <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
                     </form>
-                        Prueba Ácida (2020)= @Html.DisplayFor(model => model.Mensaje4)
+                        <a class="estilo2">Prueba Ácida (2020)= @Html.DisplayFor(model => model.Mensaje4)</a>
                             <br>
                         
                 </div>
@@ -176,18 +190,24 @@
                     <form asp-action="PruebaAcida2" class="form-inline">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         
-                        <div class="col-md-6">
+                        <div class="col-md-6" style="margin-left: -10px;">
                             <input asp-for="acorriente5" class="form-control" placeholder="Act. Corriente" style="width:130px;"/>
-                            - <input asp-for="inventario5" class="form-control" placeholder="Inventario" style="width:130px;"/>
                         </div>
-                        
                         <div class="col-md-6">
+                            <input asp-for="inventario5" class="form-control" placeholder="Inventario" style="width:130px;"/>
+                        </div> 
+                        
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
+                        </div>
+                        <div class="col-md-12">
                             <input asp-for="pcorriente5" class="form-control" placeholder="Pas. Corriente" style="width:130px;"/>
                         </div>
-                        <br/>
+                        <br>
                         <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
                     </form>
-                        Prueba Ácida (2019)= @Html.DisplayFor(model => model.Mensaje5)
+                        <a class="estilo2">Prueba Ácida (2019)= @Html.DisplayFor(model => model.Mensaje5)</a>
                         <br>
                 </div>
             </div>
@@ -200,18 +220,143 @@
                     <form asp-action="PruebaAcida3" class="form-inline">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         
-                        <div class="col-md-6">
+                        <div class="col-md-6" style="margin-left: -10px;">
                             <input asp-for="acorriente6" class="form-control" placeholder="Act. Corriente" style="width:130px;"/>
-                            - <input asp-for="inventario6" class="form-control" placeholder="Inventario" style="width:130px;"/>
                         </div>
-                        
                         <div class="col-md-6">
+                            <input asp-for="inventario6" class="form-control" placeholder="Inventario" style="width:130px;"/>
+                        </div>
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
+                        </div>
+                        <div class="col-md-12">
                             <input asp-for="pcorriente6" class="form-control" placeholder="Pas. Corriente" style="width:130px;"/>
                         </div>
                         <br/>
                         <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
                     </form>
-                        Prueba Ácida (2018)= @Html.DisplayFor(model => model.Mensaje6)
+                        <a class="estilo2">Prueba Ácida (2018)= @Html.DisplayFor(model => model.Mensaje6)</a>
+                            <br>
+                        
+                </div>
+            </div>
+            
+        </th>
+    </tr>
+</table>
+<br>
+<br>
+
+
+<div class="container">
+    <p><h3> INDICE LIQUIDEZ</h3></p>
+    <div class="row" >
+    
+        <div class="col-md-6" style="margin-right: -300px;margin-left: 300px;">
+            <h6>
+                <p class="estilo">Índice Liquidez=</p>        
+            </h6>
+        </div>
+        <div class="col-md-6"  >
+        
+            <h6>
+                <p style="text-decoration: underline" class="estilo">Activos disponibles</p> <br>
+                <p style="margin-top: -30px;" class="estilo">Pasivos Corrientes</p>
+            </h6>
+        </div>
+    </div>
+</div>
+
+<table style="text-align: center;margin: 0 auto;width:500px" border="1">
+    <tr style="background-color: #2782E9;">
+        <th>
+            <p>2020</p>
+        </th>
+
+        <th>
+            <p>2019</p>
+        </th>
+        <th>
+            <p>2018</p>
+        </th>
+        
+    </tr>
+    <tr>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="IndiceLiquidez1">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div >
+                            <input asp-for="adisponible1" class="form-control" placeholder="Act. Disponible" style="width:130px;"> 
+                        </div>
+                        
+                        ÷
+                        <br>
+                        
+                        <div >
+                            <input asp-for="pcorriente7" class="form-control" placeholder="Pas. Corriente" style="width:130px;">
+                        </div>
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Prueba Ácida (2020)= @Html.DisplayFor(model => model.Mensaje4)</a>
+                            <br>
+                        
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="IndiceLiquidez2" >
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div >
+                            <input asp-for="adisponible2" class="form-control" placeholder="Act. Disponible" style="width:130px;"> 
+                        </div>
+                        
+                        ÷
+                        <br>
+                        
+                        <div >
+                            <input asp-for="pcorriente8" class="form-control" placeholder="Pas. Corriente" style="width:130px;">
+                        </div>
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Prueba Ácida (2019)= @Html.DisplayFor(model => model.Mensaje5)</a>
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="IndiceLiquidez3">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div >
+                            <input asp-for="adisponible3" class="form-control" placeholder="Act. Disponible" style="width:130px;"> 
+                        </div>
+                        
+                        ÷
+                        <br>
+                        
+                        <div >
+                            <input asp-for="pcorriente9" class="form-control" placeholder="Pas. Corriente" style="width:130px;">
+                        </div>
+                        <br/>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Prueba Ácida (2018)= @Html.DisplayFor(model => model.Mensaje6)</a>
                             <br>
                         
                 </div>

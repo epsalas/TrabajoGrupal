@@ -21,8 +21,6 @@ namespace TrabajoGrupal.Controllers
             _context = context;
         }
 
-        
-
         public IActionResult RazonCorriente()
         {
             return View();
@@ -50,7 +48,6 @@ namespace TrabajoGrupal.Controllers
             return View("RazonCorriente",razones);
         }
 
-        
         [HttpPost]
         public IActionResult RazonCorriente3(Razones razones){
             
@@ -61,5 +58,81 @@ namespace TrabajoGrupal.Controllers
             }
             return View("RazonCorriente",razones);
         }
+
+
+
+
+        [HttpPost]
+        public IActionResult PruebaAcida1(Razones razones){
+            
+            if (ModelState.IsValid)
+            {   
+                double resta=razones.acorriente4-razones.inventario4;
+                double rcorriente= resta/razones.pcorriente4;
+                razones.Mensaje4=rcorriente;
+            }
+            return View("RazonCorriente",razones);
+        }
+
+        [HttpPost]
+        public IActionResult PruebaAcida2(Razones razones){
+            
+            if (ModelState.IsValid)
+            {   
+                double resta=razones.acorriente5-razones.inventario5;
+                double rcorriente= resta/razones.pcorriente5;
+                razones.Mensaje5=rcorriente;
+            }
+            return View("RazonCorriente",razones);
+        }
+
+        [HttpPost]
+        public IActionResult PruebaAcida3(Razones razones){
+            
+            if (ModelState.IsValid)
+            {   
+                double resta=razones.acorriente6-razones.inventario6;
+                double rcorriente= resta/razones.pcorriente6;
+                razones.Mensaje6=rcorriente;
+            }
+            return View("RazonCorriente",razones);
+        }
+
+
+
+
+        [HttpPost]
+        public IActionResult IndiceLiquidez1(Razones razones){
+            
+            if (ModelState.IsValid)
+            {
+                double rcorriente= razones.adisponible1/razones.pcorriente7;
+                razones.Mensaje7=rcorriente;
+            }
+            return View("RazonCorriente",razones);
+        }
+
+        [HttpPost]
+        public IActionResult IndiceLiquidez2(Razones razones){
+            
+            if (ModelState.IsValid)
+            {
+                double rcorriente= razones.adisponible2/razones.pcorriente8;
+                razones.Mensaje8=rcorriente;
+            }
+            return View("RazonCorriente",razones);
+        }
+
+        [HttpPost]
+        public IActionResult IndiceLiquidez3(Razones razones){
+            
+            if (ModelState.IsValid)
+            {
+                double rcorriente= razones.adisponible3/razones.pcorriente9;
+                razones.Mensaje9=rcorriente;
+            }
+            return View("RazonCorriente",razones);
+        }
+
     }
 }

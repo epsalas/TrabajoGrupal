@@ -48,6 +48,23 @@ namespace TrabajoGrupal.Models
         public double Mensaje6 {get;set;}
 
 
+
+        public double adisponible1 {get;set;}
+        public double pcorriente7 {get;set;}
+        public double Mensaje7 {get;set;}
+
+
+
+        public double adisponible2 {get;set;}
+        public double pcorriente8 {get;set;}
+        public double Mensaje8 {get;set;}
+
+
+
+        public double adisponible3 {get;set;}
+        public double pcorriente9 {get;set;}
+        public double Mensaje9 {get;set;}
+
     }
 
 
