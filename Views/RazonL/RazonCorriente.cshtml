@@ -303,7 +303,7 @@
                         <br>
                         <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
                     </form>
-                        <a class="estilo2">Prueba Ácida (2020)= @Html.DisplayFor(model => model.Mensaje4)</a>
+                        <a class="estilo2">Prueba Ácida (2020)= @Html.DisplayFor(model => model.Mensaje7)</a>
                             <br>
                         
                 </div>
@@ -330,7 +330,7 @@
                         <br>
                         <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
                     </form>
-                        <a class="estilo2">Prueba Ácida (2019)= @Html.DisplayFor(model => model.Mensaje5)</a>
+                        <a class="estilo2">Prueba Ácida (2019)= @Html.DisplayFor(model => model.Mensaje8)</a>
                         <br>
                 </div>
             </div>
@@ -356,7 +356,7 @@
                         <br/>
                         <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
                     </form>
-                        <a class="estilo2">Prueba Ácida (2018)= @Html.DisplayFor(model => model.Mensaje6)</a>
+                        <a class="estilo2">Prueba Ácida (2018)= @Html.DisplayFor(model => model.Mensaje9)</a>
                             <br>
                         
                 </div>
@@ -367,3 +367,118 @@
 </table>
 <br>
 <br>
+
+
+<div class="container">
+    <p><h3>CAPITAL DE TRABAJO</h3></p>
+    <div class="row" >
+    
+        <div class="col-md-6" style="margin-right: -300px;margin-left: 300px;">
+            <h6>
+                <p class="estilo">Capital de Trabajo=</p>        
+            </h6>
+        </div>
+        <div class="col-md-6"  >
+        
+            <h6>
+                <p class="estilo">Activos Corrientes - Pasivos Corrientes</p> 
+            </h6>
+        </div>
+    </div>
+</div>
+
+<table style="text-align: center;margin: 0 auto;width:900px" border="1">
+    <tr style="background-color: #2782E9;">
+        <th>
+            <p>2020</p>
+        </th>
+
+        <th>
+            <p>2019</p>
+        </th>
+        <th>
+            <p>2018</p>
+        </th>
+        
+    </tr>
+    <tr>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="CapitalTrabajo1"  class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div >
+                            <input asp-for="acorriente7" class="form-control" placeholder="Act. Corriente" style="width:130px;"> 
+                        </div>
+                        
+                        
+                        
+                        <div >
+                            <input asp-for="pcorriente10" class="form-control" placeholder="Pas. Corriente" style="width:130px;">
+                        </div>
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Capital de Trabajo (2020)= @Html.DisplayFor(model => model.Mensaje10)</a>
+                            <br>
+                        
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="CapitalTrabajo2"  class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div >
+                            <input asp-for="acorriente8" class="form-control" placeholder="Act. Corriente" style="width:130px;"> 
+                        </div>
+                        
+                        
+                        
+                        <div >
+                            <input asp-for="pcorriente11" class="form-control" placeholder="Pas. Corriente" style="width:130px;">
+                        </div>
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Capital de Trabajo (2019)= @Html.DisplayFor(model => model.Mensaje11)</a>
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="CapitalTrabajo3"  class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div >
+                            <input asp-for="acorriente9" class="form-control" placeholder="Act. Corriente" style="width:130px;"> 
+                        </div>
+                        
+                        
+                        
+                        
+                        <div >
+                            <input asp-for="pcorriente12" class="form-control" placeholder="Pas. Corriente" style="width:130px;">
+                        </div>
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Capital de Trabajo (2018)= @Html.DisplayFor(model => model.Mensaje12)</a>
+                            <br>
+                        
+                </div>
+            </div>
+            
+        </th>
+    </tr>
+</table>

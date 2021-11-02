@@ -53,7 +53,5 @@ F:\GFinanciera\TrabajoGrupal\bin\Debug\net5.0\Npgsql.dll
 F:\GFinanciera\TrabajoGrupal\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 F:\GFinanciera\TrabajoGrupal\obj\Debug\net5.0\Razor\Views\EstadoSF\Edit.cshtml.g.cs
 F:\GFinanciera\TrabajoGrupal\obj\Debug\net5.0\Razor\Views\EstadoSF\Create.cshtml.g.cs
-F:\GFinanciera\TrabajoGrupal\obj\Debug\net5.0\Razor\Views\RazonL\CapitalTrabajo.cshtml.g.cs
-F:\GFinanciera\TrabajoGrupal\obj\Debug\net5.0\Razor\Views\RazonL\IndiceLiquidez.cshtml.g.cs
-F:\GFinanciera\TrabajoGrupal\obj\Debug\net5.0\Razor\Views\RazonL\RazonAcida.cshtml.g.cs
 F:\GFinanciera\TrabajoGrupal\obj\Debug\net5.0\Razor\Views\RazonL\RazonCorriente.cshtml.g.cs
+F:\GFinanciera\TrabajoGrupal\obj\Debug\net5.0\Razor\Views\RazonA\RazonActividad.cshtml.g.cs

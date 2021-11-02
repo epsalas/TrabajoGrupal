@@ -1,0 +1,361 @@
+@model TrabajoGrupal.Models.RazonesA
+<div class="container">
+    <p><h3> ROTACION DE CUENTAS POR COBRAR (RCC)</h3></p>
+    <div class="row">
+
+        <!--formula cts por cobrar promedio-->
+        <div class="col-md-6" style="margin-right: -100px;margin-left: 100px;">
+            <h6>
+                <p class="estilo">Ctas por cobrar promedio=</p>        
+            </h6>
+        </div>
+        <div class="col-md-6"  >
+        
+            <h6>
+                <p style="text-decoration: underline" class="estilo">Ctas x cobrar inicial + Ctas x cobrar final</p> <br>
+                <p style="margin-top: -30px;margin-right: 100px;text-align: center;" class="estilo">2</p>
+            </h6>
+        </div>
+        <br>
+        <!--formula rotacion de cuentas por cobrar-->
+        <div class="col-md-6" style="margin-right: -100px;margin-left: 100px;">
+            <h6>
+                <p class="estilo">Rotacion de cuentas por cobrar (RCC)=</p>        
+            </h6>
+        </div>
+        <div class="col-md-6"  >
+        
+            <h6>
+                <p style="text-decoration: underline" class="estilo">Ventas netas al credito</p> <br>
+                <p style="margin-top: -30px;" class="estilo">Cuentas por cobrar promedio</p>
+            </h6>
+        </div>
+        <br>
+        <!--formula dias de ctas x cobrar -->
+        <div class="col-md-6" style="margin-right: -100px;margin-left: 100px;">
+            <h6>
+                <p class="estilo">Días de ctas x cobrar (CCD)=</p>        
+            </h6>
+        </div>
+        <div class="col-md-6"  >
+        
+            <h6>
+                <p style="text-decoration: underline;" class="estilo">360</p> <br>
+                <p style="margin-top: -30px;" class="estilo">Rotacion de ctas x cobrar(RCC)</p>
+            </h6>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+<table style="text-align: center;margin: 0 auto;width:900px" border="1">
+    <tr style="background-color: #2782E9;">
+        <th>
+            <p>2020</p>
+        </th>
+
+        <th>
+            <p>2019</p>
+        </th>
+        <th>
+            <p>2018</p>
+        </th>
+        
+    </tr>
+    
+    <tr>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="CXCProm1" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                      
+                        <div class="col-md-6" style="margin-left: -10px;">
+                            <input asp-for="ccinicial1" class="form-control" placeholder="CxC Inicial" style="width:130px;"/>
+                        </div>
+                        <div class="col-md-6">
+                            <input asp-for="ccfinal1" class="form-control" placeholder="CxC Final" style="width:130px;"/>
+                        </div>    
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
+                        </div>
+                        
+                        <br>
+                        <div class="col-md-12">
+                            <label class="form-control" style="width:130px; border:0">2</label>
+                            
+                        </div>
+                        
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Ctasxcobrar promedio (2020)= @Html.DisplayFor(model => model.Mensaje1)</a> 
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="CXCProm2" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="col-md-6" style="margin-left: -10px;">
+                            <input asp-for="ccinicial2" class="form-control" placeholder="CxC Inicial" style="width:130px;"/>
+                        </div>
+                        <div class="col-md-6">
+                            <input asp-for="ccfinal2" class="form-control" placeholder="CxC Final" style="width:130px;"/>
+                        </div>    
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
+                        </div>
+                        
+                        <br>
+                        <div class="col-md-12">
+                            <label class="form-control" style="width:130px; border:0">2</label>
+                            
+                        </div>
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                         <a class="estilo2">Ctasxcobrar promedio (2019)= @Html.DisplayFor(model => model.Mensaje2)</a>
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="CXCProm3" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="col-md-6" style="margin-left: -10px;">
+                            <input asp-for="ccinicial3" class="form-control" placeholder="CxC Inicial" style="width:130px;"/>
+                        </div>
+                        <div class="col-md-6">
+                            <input asp-for="ccfinal3" class="form-control" placeholder="CxC Final" style="width:130px;"/>
+                        </div>    
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
+                        </div>
+                        
+                        <br>
+                        <div class="col-md-12">
+                            <label class="form-control" style="width:130px; border:0">2</label>
+                            
+                        </div>
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Ctasxcobrar promedio (2018)= @Html.DisplayFor(model => model.Mensaje3)</a>
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+    </tr>
+
+    <tr>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="RotacionCC1" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                      
+                        <div class="col-md-12" >
+                            <input asp-for="vnetas" class="form-control" placeholder="V. Netas" style="width:130px;"/>
+                        </div>
+                           
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
+                        </div>
+                        
+                        <br>
+                        <div class="col-md-12">
+
+                            <input asp-for="ccp1" class="form-control" placeholder="CXC Promedio" style="width:130px;" />
+                           
+                        </div>
+                        
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Ctasxcobrar promedio (2020)= @Html.DisplayFor(model => model.Mensaje4)</a> 
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="RotacionCC2" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="col-md-12" >
+                            <input asp-for="vnetas2" class="form-control" placeholder="V. Netas" style="width:130px;"/>
+                        </div>
+                           
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
+                        </div>
+                        
+                        <br>
+                        <div class="col-md-12">
+                            <input asp-for="ccp2" class="form-control" placeholder="CXC Promedio" style="width:130px;" />
+                            
+                        </div>
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                         <a class="estilo2">Ctasxcobrar promedio (2019)= @Html.DisplayFor(model => model.Mensaje5)</a>
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="RotacionCC3" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="col-md-12" >
+                            <input asp-for="vnetas3" class="form-control" placeholder="V. Netas" style="width:130px;"/>
+                        </div>
+                            
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
+                        </div>
+                        
+                        <br>
+                        <div class="col-md-12">
+                            <input asp-for="ccp3" class="form-control" placeholder="CXC Promedio" style="width:130px;" />
+                            
+                        </div>
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Ctasxcobrar promedio (2018)= @Html.DisplayFor(model => model.Mensaje6)</a>
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+    </tr>
+
+    <tr>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="Dcxc1" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                      
+                        <div class="col-md-12" >
+                            360
+                        </div>
+                           
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
+                        </div>
+                        
+                        <br>
+                        <div class="col-md-12">
+
+                            <input asp-for="rcc1" class="form-control" placeholder="R. ctsxcobrar" style="width:130px;" />
+                           
+                        </div>
+                        
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Días de ctas x cobrar (2020)= @Html.DisplayFor(model => model.Mensaje7)</a> 
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="Dcxc2" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="col-md-12" >
+                            360
+                        </div>
+                           
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
+                        </div>
+                        
+                        <br>
+                        <div class="col-md-12">
+                            <input asp-for="rcc2" class="form-control" placeholder="R. ctsxcobrar" style="width:130px;" />
+                            
+                        </div>
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                         <a class="estilo2">Días de ctas x cobrar (2019)= @Html.DisplayFor(model => model.Mensaje8)</a>
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+        <th>
+            <br>
+            <div class="container-fluid">
+                <div class="row" style="margin: auto;">
+                    <form asp-action="Dcxc3" class="form-inline">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="col-md-12" >
+                            360
+                        </div>
+                            
+                        <br>
+                        <div class="col-md-12">
+                            <p style="text-align: center;">÷</p>
+                        </div>
+                        
+                        <br>
+                        <div class="col-md-12">
+                            <input asp-for="rcc3" class="form-control" placeholder="R. ctsxcobrar" style="width:130px;" />
+                            
+                        </div>
+                        <br>
+                        <CENTER><input type="submit" value="Calcular" class="btn btn-primary" /></CENTER><br><br>
+                    </form>
+                        <a class="estilo2">Días de ctas x cobrar (2018)= @Html.DisplayFor(model => model.Mensaje9)</a>
+                        <br>
+                </div>
+            </div>
+            
+        </th>
+    </tr>
+</table>
+
+<br><br>

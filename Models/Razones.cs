@@ -9,7 +9,7 @@ namespace TrabajoGrupal.Models
 
        
         public int ID { get; set; }
-
+        //razon corriente
         public double acorriente1 {get;set;}
         public double pcorriente1 {get;set;}
         public double Mensaje1 {get;set;}
@@ -27,7 +27,7 @@ namespace TrabajoGrupal.Models
         public double Mensaje3 {get;set;}
 
 
-
+        //prueba acida
         public double acorriente4 {get;set;}
         public double pcorriente4 {get;set;}
         public double inventario4 {get;set;}
@@ -48,7 +48,7 @@ namespace TrabajoGrupal.Models
         public double Mensaje6 {get;set;}
 
 
-
+        //indice de liquidez
         public double adisponible1 {get;set;}
         public double pcorriente7 {get;set;}
         public double Mensaje7 {get;set;}
@@ -64,6 +64,24 @@ namespace TrabajoGrupal.Models
         public double adisponible3 {get;set;}
         public double pcorriente9 {get;set;}
         public double Mensaje9 {get;set;}
+
+
+        //capital de trabajo
+        public double acorriente7 {get;set;}
+        public double pcorriente10 {get;set;}
+        public double Mensaje10 {get;set;}
+
+
+
+        public double acorriente8 {get;set;}
+        public double pcorriente11 {get;set;}
+        public double Mensaje11 {get;set;}
+
+
+
+        public double acorriente9 {get;set;}
+        public double pcorriente12 {get;set;}
+        public double Mensaje12 {get;set;}
 
     }
 
